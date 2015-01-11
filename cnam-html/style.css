@@ -176,6 +176,7 @@ body{
     width: 978px;
     height: 100px;
     margin: 0 auto 0 auto;
+    position: relative;
 }
 #header .content #gauche{
     height: 100px;
@@ -242,6 +243,15 @@ body{
 }
 #connexion{
     clear: both;
+    position: absolute;
+    top:100px;
+    height: 25px;
+    overflow: hidden;
+    z-index: 10;
+}
+#connexion:hover{
+    overflow: visible;
+    z-index: 10;
 }
 #connexion .picto{
     display: inline-block;
@@ -253,23 +263,90 @@ body{
     line-height: 30px;
 }
 #connexion .texte:hover {
-
     font-size: 18px;
     font-style: bold;
-   
 }
-
+#connexion #cadre_connexion{
+    position: relative;
+    height: 200px;
+    width: 158px;
+    background-color: white;
+}
+#connexion #cadre_connexion input[type=text],input[type=password]{
+    height: 32px;
+    width: 122px;
+    margin: 16px 0 0 16px;
+    font-family: weblysleek_uilight;
+    text-align: center;
+}
+#connexion #cadre_connexion .liens{
+    margin: 9px 0 0 16px;
+}
+#connexion #cadre_connexion a{
+    display: block;
+    font-family: weblysleek_uilight_italic;
+    color: black;
+}
+#connexion #cadre_connexion button[type=submit]{
+    height: 24px;
+    width: 54px;
+    background-color: #ffb03b;
+    margin: 16px 16px 0 0;
+    float: right;
+    font-family: elegant_typewriterregular;
+    color: #ffffff;
+    text-align: center;
+    border-style: none;
+}
 /*fin du bloc de nav*/
 
 #corps{
     clear: both;
+    z-index: 0;
     height: 550px;
 }
 #corps .content{
     width: 978px;
     margin: 0 auto 0 auto;
 }
+#corps .content #recherche{
+    margin: 70px auto 0 auto;
+    width: 66%;
+}
+#corps .content #recherche .indication{
+    font-family: weblysleek_uilight;
+    font-size: 20px;
+}
+#corps .content #recherche #liste_critere{
+    font-family: weblysleek_uilight_italic;
+    color: #ffffff;
+}
+#corps .content #recherche input[type=text]{
+    height: 42px;
+    width: 88%;
+    border-style: none;
+    box-shadow: 4px 4px 4px grey inset;
+    line-height: normal;
+}
+#corps .content #recherche input::-webkit-input-placeholder{
+    padding-left: 10px;
+}
+#corps .content #recherche input::-moz-placeholder{
+    padding-left: 10px
+}
+#corps .content #recherche input:-ms-input-placeholder{
+    padding-left: 10px
+}
+#corps .content #recherche button[type=submit]{
+    width: 10%;
+    background-image: url("./images/pictos/picto_loupe.png");
+    background-color: #ffb03b;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 44px;
+    border-style: none;
 
+}
 /*Footer*/
 
 #footer{
@@ -377,3 +454,4 @@ body{
 }
 /*fin du footer*/
 
+    

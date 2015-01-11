@@ -14,9 +14,9 @@
                 </div>
                 <div id="droite">
                     <div id="menu">
-                        <div id="gallerie" class="lienMenu">gallerie</div>
-                        <div id="soumettre" class="lienMenu">soumettre</div>
-                        <div id="forum" class="lienMenu">forum</div>
+                        <a id="gallerie" class="lienMenu" href="index.html">gallerie</a>
+                        <a id="soumettre" class="lienMenu" href="soumettre.html">soumettre</a>
+                        <a id="forum" class="lienMenu" href="#">forum</a>
                     </div>
                 </div>
                 <div id="connexion">
@@ -24,12 +24,34 @@
                         <img src="images/pictos/picto_connect.png"></img>
                     </div>
                     <div class="texte">Connexion</div>
+                    <div id="cadre_connexion">
+                        <form action="" method="post">
+                            <input type="text" maxlength="50" placeholder="Identifiant">
+                            <input type="password" placeholder="Mot de passe">
+                            <div class="liens">
+                                <a href="">s'inscrire</a>
+                                <a href="">mot de passe oublié</a>
+                            </div>
+                            <button type="submit">Valider</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
         <div id="corps">
             <div class="content">
-
+                <div id="recherche">
+                    <span class="indication">Renseignez ci-dessous vos critère de recherche</span>
+                    <form id="bar_recherche" action="" method="post">
+                        <input type="text" placeholder="Code Postale, Département, nom de Ville, nom de Rue, Monument ."/>
+                        <button type="submit">.</button>
+                    </form>
+                    <div id="liste_critere">
+                        <span>liste des critères</span>
+                        <span class="critere"></span>
+                    </div>
+                    <div id="resultat"></div>
+                </div>
             </div>
         </div>
         <div id="footer">
