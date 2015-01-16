@@ -304,6 +304,7 @@ body{
     clear: both;
     z-index: 0;
     height: 550px;
+    position: relative;
 }
 #corps .content{
     width: 978px;
@@ -328,14 +329,19 @@ body{
     box-shadow: 4px 4px 4px grey inset;
     line-height: normal;
 }
-#corps .content #recherche input::-webkit-input-placeholder{
+#corps .content #recherche ::-webkit-input-placeholder{
     padding-left: 10px;
 }
-#corps .content #recherche input::-moz-placeholder{
-    padding-left: 10px
+::-moz-placeholder{
+    padding: 0 0 0 10px;
+    text-indent:10px
+}
+:-moz-placeholder{
+    padding: 0 0 0 10px;
+    text-indent:10px;
 }
 #corps .content #recherche input:-ms-input-placeholder{
-    padding-left: 10px
+    padding-left: 10px;
 }
 #corps .content #recherche button[type=submit]{
     width: 10%;
@@ -345,8 +351,129 @@ body{
     background-position: center;
     height: 44px;
     border-style: none;
+}
+#soumettreform {
+    width:600px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-150px 0 0 -300px;
+    padding: 0 0 0 16px;
+    background-color: rgba(255, 255, 255, 0.6);
+
 
 }
+#soumettreform{
+    line-height: 24px;
+}
+#soumettreform label{
+    display: inline-block;
+    margin: 16px 16px 16px 0;
+    font-family: weblysleek_uisemilight;
+    font-size: 16px;
+    vertical-align: middle;
+} 
+#soumettreform input{
+    vertical-align: middle;
+    margin: 0px 16px 0px 0px;
+    height: 24px;
+    box-shadow: 2px 2px 2px grey inset;
+    border-style: none;
+    padding-left: 7px;
+    font-family: elegant_typewriterregular;
+    font-size: 17px;
+}
+
+#soumettreform img{
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+
+} 
+
+div.fileinputs {
+    position: relative;
+    display: inline-block;
+    width: 444px;
+}
+
+div.fakefile {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+div.fakefile input{
+    width: 390px;
+}
+
+input.file {
+    position: relative;
+    text-align: right;
+    width: 427px;
+    -moz-opacity:0 ;
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    z-index: 2;
+}
+
+label[for=codepostal]
+{
+    width: 86px;
+}
+input#codepostal {
+    width: 50px;
+}
+label[for=ville]{
+    
+}
+input#ville {
+    width: 344px;
+}
+
+label[for=nomlieu]{
+    width: 86px;
+}
+input#nomlieu {
+    width: 470px;
+}
+#motclelabel{
+    display: inline-block;
+    width : 102px;
+    margin-bottom: 16px;
+}
+#motclelabel label{
+    margin-bottom: 0px;
+}
+#motclelabel span{
+    font-family: weblysleek_uilight_italic;
+    font-size: 11px;
+}
+select#motcle{
+    display: inline-block;
+    box-shadow: 2px 2px 2px grey inset;
+    border-style: none;
+    padding-top: 2px;
+    padding-left: 5px;
+    font-family: elegant_typewriterregular;
+    font-size: 14px;
+    vertical-align: text-bottom;
+    margin-right: 245px;
+}
+#soumettreform button[type=submit]{
+    display: inline-block;
+    vertical-align: text-bottom;
+    height: 24px;
+    width: 70px;
+    background-color: #ffb03b;
+    margin: 16px 16px 0 0;
+    font-family: elegant_typewriterregular;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    border-style: none;
+}
+
 /*Footer*/
 
 #footer{
@@ -455,3 +582,22 @@ body{
 /*fin du footer*/
 
     
+div.fileinputs {
+    position: relative;
+}
+
+div.fakefile {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+input.file {
+    position: relative;
+    text-align: right;
+    -moz-opacity:0 ;
+    filter:alpha(opacity: 0);
+    opacity: 0;
+    z-index: 2;
+}

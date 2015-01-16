@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+        <div id="header">
+            <div class="content">
+                <div id="gauche">
+                    <div id="logo"></div>
+                    <div id="quezaco">site participatif<br/>de partage de photos<br/>et cartes postales anciennes<br/></div>
+                </div>
+                <div id="droite">
+                    <div id="menu">
+                        <a id="gallerie" class="lienMenu" href="index.html">gallerie</a>
+                        <a id="soumettre" class="lienMenu" href="soumettre.html">soumettre</a>
+                        <a id="forum" class="lienMenu" href="#">forum</a>
+                    </div>
+                </div>
+                <div id="connexion">
+                    <div class="picto">
+                        <img src="images/pictos/picto_connect.png"></img>
+                    </div>
+                    <div class="texte">Connexion</div>
+                    <div id="cadre_connexion">
+                        <form action="" method="post">
+                            <input type="text" maxlength="50" placeholder="Identifiant">
+                            <input type="password" placeholder="Mot de passe">
+                            <div class="liens">
+                                <a href="">s'inscrire</a>
+                                <a href="">mot de passe oublié</a>
+                            </div>
+                            <button type="submit">valider</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="corps">
+                <form action="soumettre.html" method="post" id="soumettreform">
+                    <label for="importerphoto">Importer une photo</label>
+                    <div class="fileinputs"><input type="file" class="file" id="importerphoto"></div>
+                    <label for="codepostal">Code Postal</label>
+                    <input id="codepostal" type="text" size="5">
+                    <label for="ville">Ville</label>
+                    <input id="ville" type="text">
+                    <label for="nomlieu">Nom du lieu</label>
+                    <input id="nomlieu" type="text">
+                    <div id="motclelabel">
+                        <label for="motcle">Mots-clés</label>
+                        <br>
+                        <span>Ctrl+clic pour une selection multiple</span>
+                    </div>
+                    <select multiple size="4" id="motcle">
+                        <option value="gare">gare</option>
+                        <option value="eglise">église</option>
+                        <option value="monumenthistorique">monument historique</option>
+                        <option value="chateau">château</option>
+                    </select>
+                    <button type="submit">valider</button> 
+                </form>
+        </div>
+        <div id="footer">
+            <div class="content">
+                <div id="footerLiens">
+                    <div class="col">
+                        <ul>
+                            <li><p>qui sommes-nous</p></li>
+                            <li><p>contact</p></li>
+                            <li><p>plan du site</p></li>
+                            <li><p>mentions légales</p></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <ul>
+                            <li><p>nous écrire</p></li>
+                            <li><p>nos partenaires</p></li>
+                            <li><p></p></li>
+                            <li id="signature"><p><span id="soleros">SoleroS création</span><br/><span id="reserve">tout droits réservé</span></p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="mediaLiens">
+                    <div class="ligne">
+                        <ul>
+                            <li id="facebook"><a href=""></a></li>
+                            <li id="googlePlus"><a href=""></a></li>
+                            <li id="twitter"><a href=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="ligne">
+                        <ul>
+                            <li id="pinterest"><a href=""></a></li>
+                            <li id="instagram"><a href=""></a></li>
+                            <li id="rss"><a href=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="contributions">
+                    <p><span>dernières contributions</span></p>
+                    <ul>
+                        <li>le 24/04/2014 - 94300 VINCENNES: la vielle église.  Par Prince Oberyn</li>
+                        <li>le 20/04/2014 - 95150 TAVERNY : La place du village rue de Vaucelles.  Par Kuxumaxime</li>
+                        <li>le 31/03/2014 - 75003 PARIS : rue de Picardie.  Par Joe</li>
+                        <li>le 17/03/2014 - 13300 SALON DE PROVENCE : sous les platanes.  Par Jean-Pierriot</li>
+                        <li>le 09/03/2014 - 23456 LOREM : Ipsmus sit. Par Amet</li>
+                        ......
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./test.js"></script>
+    <script src="./js/inputfile.js" type="text/javascript"></script>
+</body>
+</html>
